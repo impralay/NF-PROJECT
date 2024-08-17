@@ -1,0 +1,279 @@
+.media {
+  --m: 174px;
+  position: relative;
+  color: #fff;
+  width: calc(100% - var(--m) * 2);
+  height: 582px;
+  display: grid;
+  place-items: center;
+  margin: 0 var(--m);
+}
+
+.content-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.enjoy {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.watch {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.tv-img {
+  position: relative;
+  height: 434px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv-img img {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.tv-img video {
+  position: absolute;
+  width: 417px;
+  transform: translate(-2px, -9px);
+  z-index: 1;
+}
+
+.second {
+  display: flex;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 582px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mobile-img {
+  position: relative;
+  height: 434px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-img img {
+  position: relative;
+  height: 100%;
+}
+
+.dwnld {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.save {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 16px;
+  text-align: justify;
+}
+
+/* ----------------- download share --------------- */
+.download {
+  position: absolute;
+  top: 70%;
+  width: 290px;
+  height: 84px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 8px 12px;
+  background-color: #000;
+  gap: 3px;
+  border: 1px solid #ffffff82;
+  border-radius: 10px;
+}
+.download .img {
+  position: relative;
+  height: 100%;
+  height: 100%;
+}
+.download .img img {
+  position: absolute;
+  height: 100%;
+}
+.download span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.download .icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.download .icon img {
+  width: 50px;
+  height: 50px;
+}
+.white {
+  font-size: 16px;
+}
+.blue {
+  width: 0.857rem;
+  color: #0071eb;
+  padding-top: 4px;
+  font-weight: 100;
+  font-size: 0.85rem;
+}
+
+/* ------------------ whatch everywhare -------------- */
+.media .tv-img #multi {
+  width: 355px;
+  transform: translate(-3px, -75px);
+}
+
+/* -----------Frequently Asked Questions---------- */
+.faq-container {
+  width: 100%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+}
+
+.faq-container .faq {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  --m: 15%; /*margin*/
+  --h: 84px; /*height*/
+  --p: 12px; /*padding*/
+  position: relative;
+  cursor: pointer;
+  width: calc(100% - var(--m) * 1.5);
+  min-height: var(--h);
+  display: grid;
+  gap: 2px;
+  height: var(--h);
+  margin: 0 var(--m);
+  overflow: hidden;
+}
+
+.faq-item.active {
+  height: auto;
+}
+
+.faq-item .open-dropdown {
+  position: relative;
+  height: calc(var(--h) - var(--p) * 2);
+  width: calc(100% - var(--p) * 2);
+  display: grid;
+  align-items: center;
+  padding: var(--p);
+  grid-template-columns: 18fr 1fr;
+  background-color: #333;
+  transition: background-color 500ms;
+}
+
+.faq-item .open-dropdown:hover {
+  background-color: #595959;
+}
+.faq-item .open-dropdown i {
+  position: relative;
+  width: min-content;
+  height: min-content;
+  transform: rotate(0deg);
+  display: grid;
+  place-items: center;
+  font-size: 2.3rem;
+}
+.faq-item .dropdown {
+  position: relative;
+  width: calc(100% - var(--p) * 2);
+  height: 0;
+  padding: var(--p);
+  background-color: #333;
+}
+.faq-item.active .dropdown {
+  height: auto;
+  transition: height 500ms;
+}
+.faq-item.active .open-dropdown i {
+  transform: rotate(45deg);
+}
+
+.sub {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.foot-panel {
+  height: 380px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foot-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.foot-container .call {
+  padding: 60px 0 0 13.5%;
+  font-size: 15px;
+}
+
+.foot-container * {
+  color: #c5b9b9ef;
+  font-size: 14px;
+}
+.foot-container a {
+  cursor: pointer;
+  padding-top: 20px;
+}
+.foot-container .rap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul a {
+  display: block;
+}
+
+.net-in {
+  color: #c5b9b9ef;
+  font-size: 15px;
+  padding: 0;
+}
