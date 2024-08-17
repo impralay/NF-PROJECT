@@ -18,7 +18,7 @@ body {
 }
 .main {
   position: relative;
-  background-image: url(netflix/body.jpg);
+  background-image: url(./netflix/body.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);
